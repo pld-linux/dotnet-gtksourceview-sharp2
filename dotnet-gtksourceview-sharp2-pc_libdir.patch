@@ -1,0 +1,9 @@
+diff -aurN gtksourceview-sharp-2.0-0.10.orig/gtksourceview-sharp-2.0.pc.in gtksourceview-sharp-2.0-0.10/gtksourceview-sharp-2.0.pc.in
+--- gtksourceview-sharp-2.0-0.10.orig/gtksourceview-sharp-2.0.pc.in	2005-04-26 18:49:22.000000000 +0200
++++ gtksourceview-sharp-2.0-0.10/gtksourceview-sharp-2.0.pc.in	2005-11-30 21:05:07.000000000 +0100
+@@ -7,4 +7,4 @@
+ Description: GtkSourceView# - gtksourceview .NET Binding
+ Version: @VERSION@
+ Requires: gnome-sharp-2.0
+-Libs: -r:${prefix}/lib/mono/gtksourceview-sharp-2.0/gtksourceview-sharp.dll
++Libs: -r:${libdir}/mono/gtksourceview-sharp-2.0/gtksourceview-sharp.dll
