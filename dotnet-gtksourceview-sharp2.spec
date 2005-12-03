@@ -5,7 +5,7 @@ Name:		dotnet-gtksourceview-sharp2
 Version:	0.10
 Release:	2
 License:	LGPL
-Group:		Development/Libraries
+Group:		Libraries
 Source0:	http://go-mono.com/sources/gtksourceview-sharp-2.0/gtksourceview-sharp-2.0-%{version}.tar.gz
 # Source0-md5:	2179634b8931e6be849a1e1f82c834e3
 Patch0:		%{name}-install.patch
@@ -19,16 +19,16 @@ BuildRequires:	libtool
 BuildRequires:	monodoc
 BuildRequires:	mono-csharp >= 1.1.6
 BuildRequires:	pkgconfig
+Requires:	dotnet-gtk-sharp2-gnome >= 1.9.3
 Requires:	gtksourceview >= 1.0.1
 ExcludeArch:	alpha i386 sparc sparc64
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This package provides bindings for .NET to Gtk+ and GNOME libraries.
+This package provides .NET bindings for GtkSourceView library.
 
 %description -l pl
-Pakiet ten dostarcza wi±zania dla .NET do bibliotek z Gtk+2oraz
-GNOME.
+Pakiet ten dostarcza wi±zania .NET do biblioteki GtkSourceView.
 
 %package devel
 Summary:	Development part of GtkSourceView#
@@ -79,11 +79,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc AUTHORS ChangeLog
 %{_libdir}/mono/gac/*
 
 %files devel
 %defattr(644,root,root,755)
-%doc ChangeLog AUTHORS
 %{_datadir}/gapi-2.0/*
 %{_pkgconfigdir}/*
 %{_libdir}/monodoc/sources/gtksourceview-sharp-*
