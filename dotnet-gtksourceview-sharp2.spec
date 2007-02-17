@@ -20,7 +20,7 @@ BuildRequires:	pkgconfig
 Requires:	dotnet-gnome-sharp >= 2.16.0
 Requires:	mono >= 1.1.7
 Requires:	gtksourceview >= 1.0.1
-ExcludeArch:	alpha i386 sparc sparc64
+ExcludeArch:	alpha
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
