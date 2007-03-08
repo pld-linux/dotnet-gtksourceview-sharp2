@@ -3,7 +3,7 @@ Summary:	.NET language bindings for GtkSourceView
 Summary(pl):	Wi±zania GtkSourceView dla .NET
 Name:		dotnet-gtksourceview-sharp2
 Version:	0.10
-Release:	5
+Release:	6
 License:	LGPL
 Group:		Libraries
 Source0:	http://go-mono.com/sources/gtksourceview-sharp-2.0/gtksourceview-sharp-2.0-%{version}.tar.gz
