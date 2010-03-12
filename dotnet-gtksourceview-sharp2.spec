@@ -3,7 +3,7 @@ Summary:	.NET language bindings for GtkSourceView
 Summary(pl.UTF-8):	Wiązania GtkSourceView dla .NET
 Name:		dotnet-gtksourceview-sharp2
 Version:	0.12
-Release:	2
+Release:	3
 License:	LGPL
 Group:		Libraries
 # latest downloads summary at http://ftp.novell.com/pub/mono/sources-stable/
@@ -16,7 +16,7 @@ BuildRequires:	automake >= 1:1.7
 BuildRequires:	dotnet-gnome-sharp-devel >= 2.16.0
 BuildRequires:	gtksourceview-devel >= 1.0.1
 BuildRequires:	libtool
-BuildRequires:	monodoc
+BuildRequires:	monodoc >= 2.6
 BuildRequires:	mono-csharp >= 1.1.7
 BuildRequires:	pkgconfig
 Requires:	dotnet-gnome-sharp >= 2.16.0
@@ -80,4 +80,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_prefix}/lib/mono/gtksourceview-sharp-2.0
 %{_datadir}/gapi-2.0/*
 %{_pkgconfigdir}/*.pc
-%{_libdir}/monodoc/sources/gtksourceview-sharp-*
+%{_prefix}/lib/monodoc/sources/gtksourceview-sharp-*
