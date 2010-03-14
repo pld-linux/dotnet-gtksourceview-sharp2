@@ -16,12 +16,13 @@ BuildRequires:	automake >= 1:1.7
 BuildRequires:	dotnet-gnome-sharp-devel >= 2.16.0
 BuildRequires:	gtksourceview-devel >= 1.0.1
 BuildRequires:	libtool
-BuildRequires:	monodoc >= 2.6
 BuildRequires:	mono-csharp >= 1.1.7
+BuildRequires:	mono-tools
+BuildRequires:	monodoc >= 2.6
 BuildRequires:	pkgconfig
 Requires:	dotnet-gnome-sharp >= 2.16.0
-Requires:	mono >= 1.1.7
 Requires:	gtksourceview >= 1.0.1
+Requires:	mono >= 1.1.7
 ExcludeArch:	i386
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
