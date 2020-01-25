@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.mono
 Summary:	.NET language bindings for GtkSourceView
 Summary(pl.UTF-8):	Wiązania GtkSourceView dla .NET
 Name:		dotnet-gtksourceview-sharp2
