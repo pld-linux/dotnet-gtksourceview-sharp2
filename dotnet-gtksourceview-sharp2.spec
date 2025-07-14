@@ -46,7 +46,7 @@ Część GtkSourceView# przeznaczona dla programistów.
 
 %prep
 %setup -q -n gtksourceview-sharp-2.0-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__libtoolize}
