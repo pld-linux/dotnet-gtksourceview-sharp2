@@ -1,8 +1,12 @@
+#
+# managed dotnet code, no native debug sources
+%undefine	_debugsource_packages
+#
 Summary:	.NET language bindings for GtkSourceView
 Summary(pl.UTF-8):	Wiązania GtkSourceView dla .NET
 Name:		dotnet-gtksourceview-sharp2
 Version:	0.12
-Release:	6
+Release:	7
 License:	LGPL
 Group:		Libraries
 # latest downloads summary at http://ftp.novell.com/pub/mono/sources-stable/
